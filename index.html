@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Boho Wedding Invitation Selector</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet"> 
+    <link href="http://fonts.cdnfonts.com/css/simple-brush-script" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Your Boho wedding invitation in 4 easy steps</h1>
+    </header>
+    
+  <main>
+        <form class="wedding-input">
+            <h2>1. Select your style</h2>
+              <ul class="style-tabs">
+                <li class="style-one-tab"><p class="style-one-tab-text current">Boho Floral</p></li>
+                <li class="style-two-tab"><p class="style-two-tab-text">Boho Watercolour</p></li>
+                <li class="style-three-tab"><p class="style-three-tab-text">Boho Dark</p></li>
+              </ul>
+
+            <h2>2. Enter your details</h2>
+              <div class="first-name-input">
+                <label>Your name</label>
+                <br>
+                <input type="text" name="first-name" class="first-name">
+              </div>
+
+              <div class="second-name-input">
+                <label>Your partner's name</label>
+                <br>
+                <input type="text" name="second-name" class="second-name">
+              </div>
+
+              <div class="date-input">
+                <label>Wedding date</label>
+                <br>
+                <input type="text" name="date" class="date">
+              </div>
+
+              <div class="time-input">
+                <label>Time</label>
+                <br>
+                <input type="text" name="time" class="time">
+              </div>
+
+              <div class="location-input">
+                <label>Location</label>
+                <br>
+                <input type="text" name="location" class="location">
+              </div>
+
+              <div class="RSVP-input">
+                <label>RSVP details</label>
+                <br>
+                <input type="text" name="rsvp" class="RSVP">
+              </div>
+            
+           
+            <h2>3. Create your order</h2>
+
+            <div class="multipleSelector">
+                <label class="label">Select your design:</label>
+                <br>
+                    
+                <select name="design" id = "designType" >
+                 <!--<option selected="selected"></option>-->
+                  <option value="Boho Floral">Boho Floral</option>
+                  <option value= "Boho Watercolour">Boho Watercolour</option>  
+                  <option value = "Boho Dark">Boho Dark</option>
+                </select>
+                  <br>
+                <label class ="label">Select your paper:</label>
+                  <br>
+                <select name="papers" id = "paperType" onclick="pricePerPage()">
+                  
+                    <!--<option selected="selected"></option>-->
+                    <option value = "Embossed Paper">Embossed Paper</option>
+                    <option value = "Recycled Paper">Recycled Paper</option>  
+                    <option value = "Standard Paper">Standard Paper</option>
+                </select>
+                  <br>
+                    
+                  <div class="quantity">
+                      <label for="inputQuantity" id="quantityLabel" class="form-label">Quantity required:</label>
+                      <!--<br>-->
+                      <input type="text" class="form-control" id="inputQuantity" oninput="myFunction()" >
+                  </div>
+                      <br>
+                        <p id="outputMsg"></p>
+                        <p class= currencyStyle id="totalPrice"></p>
+                          <br>
+            <h2>4. Confirm and pay</h2>
+                  <button id="button" onclick="messageToUser()">Click to continue</button>
+                                                      
+            </div>
+                       
+               
+        </form>
+
+        <div class="wedding-preview boho1">
+            <p class ="layoutText">Please join us for the wedding of </p>
+            <p class="first-name-preview user-supplied"></p>
+            <p class = "layoutText">and</p>
+            <p class="second-name-preview user-supplied"></p>
+            <p class = "layoutText">on</p>
+            <p class="date-preview user-supplied"></p>
+            <p class = "layoutText">at</p>
+            <p class="time-preview user-supplied"></p>
+            <p class = "layoutText">at</p>
+            <p class="location-preview user-supplied"></p>
+            <p class="layoutText">RSVP</p>
+            <p class = "RSVP-preview user-supplied"></p>
+        </div>
+
+    </main>
+  </body>
+</html>

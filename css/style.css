@@ -1,0 +1,214 @@
+@import url(http://fonts.googleapis.com/css?family=Elsie+Swash+Caps:400,900);
+@import url('http://fonts.cdnfonts.com/css/simple-brush-script');
+@font-face {
+    font-family: 'Luxurious Script';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/luxuriousscript/v3/ahcCv9e7yydulT32KZ0rBIoD7DzMs0PEbh1J.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+
+html {
+  margin:auto;
+  box-sizing: border-box;
+  background-color: cornsilk;
+}
+
+h1 {
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+font:sans-serif;
+color: rgb(124, 105, 105);
+}
+
+h2{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+font:sans-serif;
+color: rgb(124, 105, 105);
+margin-top:2px;
+margin-bottom: 2px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:mistyrose;
+    padding-bottom:10px;
+}
+
+p {
+    margin:5px;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+    height: 800px;
+}
+
+.wedding-input {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 500px;
+    width: 300px;
+    margin-top:150px; 
+}
+
+.wedding-preview {
+    display: flex;
+    flex-direction: column;
+    /*justify-content: space-around;*/
+    align-items: center;
+    height: 800px;
+    width: 700px;
+    font-size: 15px;
+}
+
+.user-supplied {
+    font-size: 25px;
+    margin: 0px, 0px;
+}
+
+.first-name-preview {
+    font-size: 60px;
+}
+
+.second-name-preview {
+    font-size: 60px;
+}
+
+.boho1 {
+   
+    background-image:url(BohoWeddingInvitation1.jpg );
+    background-size: cover;
+    height:500px;
+    width:600px;
+    padding-top: 300px;
+    color: rgb(104, 67, 67);
+    transition: 2s;
+    font-family: 'Elsie Swash Caps', cursive;
+}
+
+.boho2 {
+    background-image: url(BohoWeddingInvitation2.jpg);
+    background-size: cover; 
+   /* background-repeat: no-repeat;  */
+    font-family: 'Dancing Script', cursive;
+    /* font-size: 1.5em */
+    height:650px;
+    width:600px;
+    padding-top: 150px ;
+    color: #778;
+    transition: 2s;
+}
+
+.boho3 {
+   background-image: url(BohoWeddingInvitation3.jpg);
+   background-size: cover;
+   height:650px;
+   width:600px;
+   color:rgb(236, 222, 213);
+   font-family: 'Simple Brush Script', sans-serif;
+   padding-top: 150px;
+   transition: 2s;
+}
+
+.wedding-preview .boho3 {
+    font-size: small;
+}
+
+.style-tabs {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.style-tabs {
+    padding: 3px 0;
+    margin-left: 0;
+    border-radius: 10px;
+}
+
+.style-tabs li {
+    list-style: none;
+    margin: 0;
+    display: inline;
+    font-family:sans-serif;
+    font-size: smaller;
+}
+
+.style-tabs li p {
+    padding: 3px 3px;
+    margin-left: 3px;
+    border: 1px solid #778;
+    background: rgb(248, 164, 164);
+    
+}
+
+.style-tabs li p:link {
+    color: #448;
+}
+
+.style-tabs li p:hover {
+    color: #000;
+    background: rgb(238, 197, 170);
+    border-color: #227;
+}
+
+label {
+    color: rgb(104, 73, 45);
+    font-family:sans-serif;
+    font-size: smaller;
+}
+
+#button {  
+    padding: 3px 3px;
+    margin-left: 3px;
+    border: 1px solid #778;
+    background: rgb(248, 164, 164);
+    width: 170px;
+}
+
+#button:hover {
+    color: #000;
+    background: rgb(238, 197, 170);
+    border-color: #227;
+}
+
+
+
+#outputMsg {
+    font-family: sans-serif;
+    font-size: smaller;
+}
+
+#designType{
+    width:170px;
+}
+
+#paperType {
+    width:170px;
+}
+
+#quantityLabel {
+    padding-right:100px;
+}
+
+#inputQuantity {
+    width:162px;
+}
+
+#totalPrice{
+    font-size:x-large;
+    color: rgb(124, 105, 105);
+    padding-left: 90px;
+}
+
+.currencyStyle:before {
+    content: '$';
+}
+
+
